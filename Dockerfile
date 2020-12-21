@@ -5,7 +5,7 @@ WORKDIR /app
 
 COPY package*.json ./
 
-RUN npm ci --only=production 
+RUN yarn install --prod --frozen-lockfile && yarn cache clean
 
 COPY . .
 
