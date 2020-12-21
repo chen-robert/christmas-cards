@@ -8,7 +8,7 @@ let mouseY = -100
 
 let width, height, lastNow
 let snowflakes
-const maxSnowflakes = 500
+const maxSnowflakes = 1500
 
 function init() {
   snowflakes = []
