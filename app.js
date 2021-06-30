@@ -21,6 +21,9 @@ app.use(express.static(staticPath));
 app.get("/", (req, res) => res.render("index", {
   name: ""
 }))
+app.get("/cards/:name", (req, res) => res.render("index", {
+  name: config[req.params.name] || ""
+}))
 app.get("/:name", (req, res) => res.render("index", {
   name: config[req.params.name] || ""
 }))
